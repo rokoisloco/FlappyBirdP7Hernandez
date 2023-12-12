@@ -1027,6 +1027,7 @@ GameObject:
   - component: {fileID: 1121566134}
   - component: {fileID: 1121566136}
   - component: {fileID: 1121566135}
+  - component: {fileID: 1121566137}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -1186,6 +1187,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658806a5695fa544bab1a7d74141b282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1121566137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121566129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076602e22df0efd40b226c08852d8034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1400516329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,6 +1209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1400516331}
   - component: {fileID: 1400516330}
+  - component: {fileID: 1400516332}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -1216,6 +1230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 575626409}
+  scoreText: {fileID: 157651588}
   gameOver: 0
   scrollSpeed: -1.5
 --- !u!4 &1400516331
@@ -1233,6 +1248,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1400516332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400516329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba8fb15e101b4e84a873931f83248a58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columnPoolSize: 5
+  columnPrefab: {fileID: 0}
+  spawnRate: 4
 --- !u!1 &1587944964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,6 +1276,7 @@ GameObject:
   - component: {fileID: 1587944968}
   - component: {fileID: 1587944967}
   - component: {fileID: 1587944966}
+  - component: {fileID: 1587944970}
   m_Layer: 0
   m_Name: Ground 2
   m_TagString: Untagged
@@ -1405,6 +1436,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1587944970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587944964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076602e22df0efd40b226c08852d8034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
